@@ -1,0 +1,27 @@
+{
+  "name": "remoteworkers_page",
+  "version": "1.0.0",
+  "description": "Тренировочный макет RemoteWorkers",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^2.3.2",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "browser-sync": "^2.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexapplecider/RemoteWorkers.git"
+  },
+  "author": "alexapplecider",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexapplecider/RemoteWorkers/issues"
+  },
+  "homepage": "https://github.com/alexapplecider/RemoteWorkers#readme"
+}
