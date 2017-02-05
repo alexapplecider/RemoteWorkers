@@ -1,0 +1,247 @@
+@charset "UTF-8";
+.about {
+  padding-left: 300px;
+  min-height: 560px;
+  background: url(../img/about_girl.png) no-repeat;
+  background-position: -8px 0;
+  color: #78909c; }
+  .about__title-small {
+    font: 1.66em/1.3 "MuseoSansBold";
+    margin-bottom: 36px;
+    letter-spacing: 0.3px; }
+  .about__title, .about__skills-title {
+    font: 2.5em/1.3 "MuseoSansBold";
+    margin-bottom: 25px;
+    color: #455a64;
+    letter-spacing: 1px; }
+  .about__skills-title {
+    margin-bottom: 13px; }
+  .about-text {
+    font: 1.45em/1.6 "MuseoSansLight";
+    color: #78909c;
+    margin-bottom: 40px; }
+  .about__skills-list {
+    margin-bottom: 40px; }
+
+.skills-list__item {
+  position: relative;
+  display: inline-block;
+  font: 1.458em/1.6 "MuseoSansLight";
+  color: #78909c;
+  letter-spacing: .4px;
+  font-stretch: extra-expanded;
+  list-style: none;
+  padding-left: 10px;
+  margin-left: 17px; }
+  .skills-list__item:first-child {
+    margin-left: 0px; }
+  .skills-list__item:nth-child(9) {
+    margin-left: 0px; }
+  .skills-list__item::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #b7c4ca;
+    border-radius: 50%;
+    top: 8px;
+    left: 0; }
+
+.price-per-hour {
+  display: inline-block;
+  font: 2.5em/1.3 "MuseoSansMedium";
+  color: #455a64;
+  margin-right: 28px; }
+
+.about-switch-button {
+  display: inline-block; }
+
+.my-profile,
+.hire-me {
+  display: inline-block;
+  font: 1.544em/1.3 "MuseoSansLight";
+  letter-spacing: 1px;
+  border: 2px solid #30c6a5;
+  border-radius: 3px;
+  padding: 9px 21px;
+  text-decoration: none;
+  transition: 0.5s; }
+
+.my-profile {
+  color: #30c6a5; }
+  .my-profile:hover {
+    color: #fff;
+    background-color: #30c6a5;
+    transition: 0.5s;
+    border-top-right-radius: 0px; }
+
+.hire-me {
+  margin-left: -5px;
+  color: #fff;
+  background-color: #30c6a5;
+  border-top-left-radius: 0px; }
+  .hire-me:hover {
+    color: #30c6a5;
+    background-color: #fff; }
+
+.how-work {
+  background-color: #30c6a5;
+  display: flex;
+  margin-bottom: 97px; }
+  .how-work-inner-wrap {
+    width: 50%; }
+  .how-work__find-out-link {
+    display: block;
+    position: relative;
+    width: 100%;
+    font: 2em/1.3 "MuseoSansRegular";
+    color: #fff;
+    letter-spacing: 1px;
+    background-color: #1abc9c;
+    padding-left: 15%;
+    padding-top: 26px;
+    padding-bottom: 25px;
+    text-decoration: none; }
+  .how-work__find-out-link::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    left: 65px;
+    top: 26px;
+    height: 25px;
+    background: url(../img/icon-sprite.png) no-repeat;
+    background-position: 0 0; }
+
+.how-work__description {
+  position: relative;
+  padding-left: 10%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding-right: 26%; }
+  .how-work__description-title {
+    font: 2.5em/1.3 "MuseoSansBold";
+    color: #fff;
+    letter-spacing: 1px;
+    margin-top: 105px;
+    margin-bottom: 22px; }
+  .how-work__description-text {
+    font: 1.45em/1.7 "MuseoSansLight";
+    margin-bottom: 70px;
+    color: #fff; }
+  .how-work__description::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 60%;
+    right: -9px;
+    background-color: #30c6a5;
+    transform: rotate(45deg); }
+
+/*.how-work-video { / адаптивность плеера?
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}*/
+.flex-wrap--featured-profiles {
+  justify-content: space-between; }
+
+.featured-profiles {
+  color: black;
+  min-width: 730px;
+  max-width: 730px; }
+
+.featured-profiles__heading {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 38px; }
+
+.profiles-heading--small-title {
+  width: 100%;
+  margin-bottom: 10px;
+  font: 1.45em/1.7 "MuseoSansRegular"; }
+
+.profiles-heading--title {
+  font: 2.5em/1.3 "MuseoSansBold";
+  letter-spacing: 1px; }
+
+.profiles-heading--counter {
+  font: 1.45em/1.7 "MuseoSansRegular"; }
+
+.featured-profiles-table {
+  font: 1.35em/1.7 "MuseoSansRegular";
+  color: #78909c;
+  width: 100%; }
+
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid #e0e7ee;
+  border-top: none;
+  padding-right: 30px;
+  padding-left: 30px; }
+  .profile-row:first-child {
+    border-top: 1px solid #e0e7ee; }
+  .profile-row__cell {
+    display: inline-block;
+    padding-top: 27px;
+    padding-bottom: 20px;
+    align-self: center; }
+
+.view-profile-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #30c6a5;
+  border: 1px solid #30c6a5;
+  border-radius: 2px;
+  padding: 3px 15px; }
+  .view-profile-link:hover {
+    color: #fff;
+    background-color: #30c6a5; }
+
+.cell-name {
+  position: relative;
+  width: 210px; }
+
+.photo {
+  float: left;
+  margin-right: 17px; }
+
+.name {
+  display: block;
+  font: 18px/1.3 "MuseoSansBold";
+  color: #455a64;
+  letter-spacing: 0.5px; }
+
+.position {
+  display: block; }
+
+.top-teams {
+  width: 230px;
+  font: 1.45em/1.7 "MuseoSansLight"; }
+  .top-teams__small-title {
+    margin-bottom: 5px; }
+  .top-teams__title {
+    font: 25px/1.3 "MuseoSansBold";
+    letter-spacing: 1px;
+    margin-bottom: 44px; }
+
+.first-team__poster-wrap {
+  position: relative; }
+
+.first-team__poster {
+  position: relative;
+  width: 230px;
+  height: 223px;
+  overflow: hidden;
+  border-radius: 3px; }
+
+.first-team__image {
+  transform: scale(1);
+  filter: grayscale(50%) brightness(50%);
+  position: absolute;
+  top: -45%;
+  left: -67%; }

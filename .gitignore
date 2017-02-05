@@ -222,3 +222,4 @@ node_modules/
 node_modules/gulp-sass/node_modules/node-sass/node_modules/sass-graph/node_modules/lodash/fp/useWith.js
 node_modules/
 .idea/
+terminal.glue
