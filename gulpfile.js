@@ -39,7 +39,7 @@ gulp.task("build", function () {
         .pipe(gulp.dest('docs'))
     var buildCss = gulp.src('src/css/*.css')
         .pipe(gulp.dest('docs/css'))
-    var buildImage = gulp.src('src/img/*.*')
+    var buildImage = gulp.src('src/img/**/*.*')
         .pipe(gulp.dest('docs/img'))
     var buildScripts = gulp.src('src/js/*')
         .pipe(gulp.dest('docs/js'))
