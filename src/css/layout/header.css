@@ -50,6 +50,9 @@ body {
 .flex-wrap--why-us {
   justify-content: flex-start; }
 
+.flex-wrap--footer {
+  justify-content: space-between; }
+
 .header {
   position: relative;
   background: url(../img/header_bg.jpg) center top no-repeat;

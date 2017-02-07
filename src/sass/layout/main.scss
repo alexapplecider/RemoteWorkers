@@ -461,7 +461,6 @@
     top: 0;
     left: 0;
     background-color: rgba(38,50,56, .8);
-
   } 
 }
 
@@ -477,6 +476,7 @@
   padding-left: 40px;
   padding-bottom: 60px;
   box-shadow: inset -3px -1px 8px 0 rgba(7, 7, 7, 0.2);
+
   &::after {
     position: absolute;
     top: -9%;
@@ -496,12 +496,14 @@
   color: #78909c;
   margin-bottom: 23px;
 }
+
 .feedback-author {
   display: block;
   font: 1.875em/1.7 "MuseoSansRegular";
   letter-spacing: 0.5px;
   font-weight: 700;
   color: #455a64;
+
   &-position {
     display: block;
     font: 1.458em/1.7 "MuseoSansMedium";
