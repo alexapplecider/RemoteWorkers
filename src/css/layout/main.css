@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .about {
   padding-left: 300px;
   min-height: 560px;
@@ -139,11 +138,15 @@
     background-color: #30c6a5;
     transform: rotate(45deg); }
 
-/*.how-work-video { / адаптивность плеера?
+.video-wrap {
+  width: 50%;
+  height: 450px; }
+
+.how-work-video {
   width: 100%;
   height: auto;
-  max-height: 100%;
-}*/
+  max-height: 100%; }
+
 .featured-profiles {
   color: black;
   min-width: 730px;

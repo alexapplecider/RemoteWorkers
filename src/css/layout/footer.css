@@ -54,6 +54,40 @@
   color: #b0bec4;
   letter-spacing: 0.5px; }
 
+.social-links {
+  text-align: center; }
+
+.social-btn {
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  margin-right: 20px;
+  background: url(../img/social-icons/social-sprite.png) 1px -3px no-repeat; }
+  .social-btn-facebook {
+    background-position: -240px -3px; }
+  .social-btn-facebook:hover {
+    background-position: -261px -3px; }
+  .social-btn-twitter {
+    background-position: -3px 0px; }
+  .social-btn-twitter:hover {
+    background-position: -32px 0px; }
+  .social-btn-pinterest {
+    background-position: -61px -3px; }
+  .social-btn-pinterest:hover {
+    background-position: -89px -3px; }
+  .social-btn-dribble {
+    background-position: -117px -3px; }
+  .social-btn-dribble:hover {
+    background-position: -146px -3px; }
+  .social-btn-be {
+    background-position: -176px -1px; }
+  .social-btn-be:hover {
+    background-position: -210px -1px; }
+  .social-btn-instagram {
+    background-position: -284px -3px; }
+  .social-btn-instagram:hover {
+    background-position: -312px -3px; }
+
 .site-map-title {
   font: 18.75px/1.7 "MuseoSansBold";
   color: #546e7a;
@@ -67,6 +101,9 @@
   font-family: "MuseoSansMedium";
   color: #a8b6bc;
   letter-spacing: 0.5px; }
+
+.site-map-item-link:hover {
+  border-bottom: 2px solid #3ad2b8; }
 
 .from-blog {
   width: 230px; }
