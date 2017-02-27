@@ -1,8 +1,8 @@
 .footer {
-	font: 1.354em/1.7 "MuseoSansMedium";
+	font: 1.354em/1.5 "MuseoSansMedium";
 	color: #a8b6bc;
 	letter-spacing: 0.5px;
-	padding-top: 90px;
+	padding-top: 75px;
 	&-logo {
 	font: 31.25px/1.7 "MuseoSlab_500";
 	color: #546e7a;
@@ -17,7 +17,7 @@
 
 .subscribe-input {
 	width: 353px;
-	margin-bottom: 30px;
+	margin-bottom: 28px;
 	&-field {
 		width: 235px;
 		border-top-left-radius: 4px;
@@ -120,13 +120,18 @@
 
 
 .site-map {
+	flex-basis: 15%;
+	padding-top: 19px;
 	&-title {
 	font: 18.75px/1.7 "MuseoSansBold";
 	color: #546e7a;
-	margin-bottom: 22px;
+	margin-bottom: 15px;
 	}
 	&-list {
 	list-style: none;
+	}
+	&-item {
+	margin-bottom: 3px;
 	}
 	&-item-link {
 	text-decoration: none;
@@ -144,9 +149,10 @@
 .from-blog {
 	width: 230px;
 	&-title {
-	font: 18.75px/1.7 "MuseoSansBold";
+	font: 18.75px/1.5 "MuseoSansBold";
 	color: #546e7a;
-	margin-bottom: 22px;
+	margin-bottom: 20px;
+    padding-top: 20px;
 	}
 	&-first-article {
 	margin-bottom: 25px;
@@ -161,10 +167,12 @@
 
 .right-and-design {
 	font: 13.54px/1.7 "MuseoSansMedium";
+	letter-spacing: 0.7px;
 	margin-top: 80px;
-	padding-top: 30px;
+	padding-top: 25px;
 	padding-bottom: 30px;
 	border-top: 1px solid #e3e5e6;
+
 }
 .copyright-right {
 	color: #b8c6cd;
