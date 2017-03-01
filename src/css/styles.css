@@ -112,14 +112,14 @@ body {
   border-bottom: 1px solid #e1e3e4; }
 
 .container {
-  width: 1170px;
+  max-width: 1170px;
   height: 100%;
   margin-right: auto;
   margin-left: auto;
   position: relative; }
 
 .inner-container {
-  width: 1030px;
+  max-width: 1030px;
   height: 100%;
   margin-right: auto;
   margin-left: auto; }
@@ -229,7 +229,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 1030px;
+  max-width: 1030px;
   align-self: center;
   color: #455a64;
   background-color: #ffffff;
@@ -258,7 +258,8 @@ body {
     letter-spacing: 0.5px;
     padding-left: 10px;
     padding-right: 20px;
-    width: 375px;
+    width: 300px;
+    max-width: 377px;
     height: 42px;
     border-radius: 3px;
     border-color: #cfd8dc; }
@@ -270,6 +271,10 @@ body {
     background-color: #30c6a5;
     padding: 11px 24px;
     cursor: pointer; }
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 1% 0 1%; } }
 
 .about {
   padding-top: 31px;
@@ -368,6 +373,7 @@ body {
   .how-work-inner-wrap {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 50%;
     background-color: #30c6a5; }
   .how-work__find-out-link {
@@ -431,7 +437,7 @@ body {
 
 .featured-profiles {
   color: black;
-  min-width: 730px;
+  flex-basis: 100%;
   max-width: 730px; }
 
 .featured-profiles__heading {

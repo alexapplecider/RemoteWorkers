@@ -119,6 +119,7 @@
   &-inner-wrap {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 	width: 50%;
 	background-color: $accent-color;
   }
@@ -197,7 +198,7 @@
 
 .featured-profiles {
   color: black;
-  min-width: 730px;
+  flex-basis: 100%;
   max-width: 730px;
 }
 
@@ -528,4 +529,29 @@
 	color: $accent-color;
 	letter-spacing: 0.5px;
   }
+}
+
+
+@media (max-width: 1024px) {
+ 
+}
+
+@media (max-width: 980px) {
+  
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 600px) {
+  
+}
+
+@media (max-width: 480px) {
+  
+}
+
+@media (max-width: 320px) {
+  
 }
