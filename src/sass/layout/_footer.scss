@@ -120,7 +120,6 @@
 
 
 .site-map {
-	flex-basis: 15%;
 	padding-top: 19px;
 	&-title {
 	font: 18.75px/1.7 "MuseoSansBold";
@@ -185,9 +184,11 @@
 }
 
 
-
-
-
+// 
+// 
+//  Media Queries
+//
+//
 
 @media (max-width: 980px) {
   
