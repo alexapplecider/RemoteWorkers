@@ -807,6 +807,12 @@ body {
     color: #30c6a5;
     letter-spacing: 0.5px; }
 
+@media (max-width: 1024px) {
+  .how-work__find-out-link {
+    padding-right: 31%; }
+    .how-work__find-out-link:before {
+      left: 1.5%; } }
+
 @media (max-width: 980px) {
   .how-work__description {
     padding-right: 5%;
