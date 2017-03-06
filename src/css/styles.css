@@ -331,6 +331,10 @@ body {
     padding: 11px 24px;
     cursor: pointer; }
 
+@media (min-width: 1400px) {
+  .header {
+    background-size: cover; } }
+
 @media (max-width: 1200px) {
   .container {
     padding: 0 1% 0 1%; }
