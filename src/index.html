@@ -6,6 +6,11 @@
     <title> Remote Workers </title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+
+
+
 </head>
 <body>
 <header class="header">
@@ -247,7 +252,7 @@
       </div>
     <div class="container-full">
        <section class="feedback">
-            <div class="feedback__slider">
+            <div class="feedback__slider slick-slider">
               <div class="first-slide">
                 <p class="feedback-text">
                   Got some real professional workers at <br>
@@ -255,12 +260,25 @@
                   website. Specially the designer has <br> 
                   provided a great service. Thanks!
                 </p>
-            <span class="feedback-author"> John Mudrock </span>
-            <span class="feedback-author-position"> CEO Blueprint </span>
+                <span class="feedback-author"> John Mudrock </span>
+                <span class="feedback-author-position"> CEO Blueprint </span>
+              </div>
+              <div class="first-slide">
+                <p class="feedback-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa eius nisi consequatur eum dolores tempora quibusdam ea modi, itaque cupiditate!
+                </p>
+                <span class="feedback-author"> Anatoliy Butch </span>
+                <span class="feedback-author-position"> CEO Blueprint </span>
+              </div>
+              <div class="first-slide">
+                <p class="feedback-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, assumenda itaque. Libero laboriosam veritatis inventore tenetur aperiam repellendus delectus excepturi, modi! Quaerat accusantium itaque eius blanditiis quia tenetur, error delectus!
+                </p>
+                <span class="feedback-author"> Masha Zakharova </span>
+                <span class="feedback-author-position"> CEO Blueprint </span>
               </div>
             </div>
         </section>
-    </div>
     </div>
 </main>
 
@@ -324,10 +342,21 @@
 
 <div class="mobile-menu-block">
   <ul class="nav-list-mobile">
-                    <li class="nav-list__item-mobile"><a class="nav-list__item-link" href="#"> Home </a></li><li class="nav-list__item-mobile"><a class="nav-list__item-link" href="#"> Members </a></li><li class="nav-list__item-mobile"><a class="nav-list__item-link" href="#"> How It Works </a></li><li class="nav-list__item-mobile"><a class="nav-list__item-link" href="#"> Help </a></li><li class="nav-list__item-mobile"><a class="nav-list__item-link sign-in" href="#"> Sign In </a></li>
-                </ul>
+    <li class="nav-list__item-mobile"><a class="nav-list__item-link" href="#"> Home </a></li><li class="nav-list__item-mobile"><a class="nav-list__item-link" href="#"> Members </a></li><li class="nav-list__item-mobile"><a class="nav-list__item-link" href="#"> How It Works </a></li><li class="nav-list__item-mobile"><a class="nav-list__item-link" href="#"> Help </a></li><li class="nav-list__item-mobile"><a class="nav-list__item-link sign-in" href="#"> Sign In </a></li>
+  </ul>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+
+<script type="text/javascript">
+  $('.slick-slider').slick({
+    autoplay: true,
+    arrows: false,
+    dots: true
+
+  });
+</script>
 
 </body>
 </html>

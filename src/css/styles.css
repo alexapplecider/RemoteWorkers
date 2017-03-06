@@ -476,9 +476,8 @@ body {
     letter-spacing: 1px;
     background-color: #1abc9c;
     padding-top: 30px;
+    padding-left: 26%;
     padding-bottom: 25px;
-    padding-right: 4%;
-    padding-left: 17%;
     text-decoration: none; }
   .how-work__find-out-link > img {
     vertical-align: middle;
@@ -556,6 +555,7 @@ body {
 .profile-row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   border: 1px solid #e0e7ee;
   border-top: none;
@@ -763,12 +763,11 @@ body {
 
 .feedback__slider {
   position: relative;
-  width: 370px;
-  height: 310px;
+  max-width: 370px;
+  min-height: 310px;
   margin: 0 auto;
   padding-top: 45px;
   padding-left: 40px;
-  padding-bottom: 60px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   background-color: white;
@@ -880,7 +879,10 @@ body {
   .price-per-hour {
     margin-bottom: 20px; }
   .about-switch-button {
-    margin-left: 40px; } }
+    margin-left: 40px; }
+  .profile-row__cell {
+    padding-top: 15px;
+    padding-bottom: 10px; } }
 
 .footer {
   font: 1.354em/1.5 "MuseoSansMedium";
