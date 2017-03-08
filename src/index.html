@@ -21,7 +21,7 @@
                 </ul>
             </nav>
             <div class="mobile-menu">
-              <button  class="mobile-menu-button"></button>
+              <button  onclick="return showMenu;" class="mobile-menu-button"></button>
             </div>
         </div>
         <div class="promo-block">
@@ -361,11 +361,24 @@
 <script type="text/javascript" src="js/slick.min.js"></script>
 
 <script type="text/javascript">
+
+
+
   $('.slick-slider').slick({
     autoplay: true,
     arrows: false,
     dots: true
   });
+
+
+  var mobMenuButton = $('.mobile-menu-button'),
+      mobMenuBlock = $('.mobile-menu-block');
+
+      $('.mobile-menu-button').on( 'click', function( event ) {
+        mobMenuBlock.toggleClass('mobile-menu-block--show');
+        console.log( 'clicked', $( this ).text() );
+});
+
 </script>
 
 </body>

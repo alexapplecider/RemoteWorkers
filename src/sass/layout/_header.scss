@@ -22,6 +22,7 @@ body {
   letter-spacing: 1px;
 }
 
+
 .bottom-line {
   border-bottom: 1px solid #e1e3e4;
 }
@@ -219,10 +220,12 @@ body {
   text-align: center;
   padding-top: 20vh;
   z-index: 1;
-  &--show {
-    display: block;
-  }
 }
+
+.mobile-menu-block--show {
+  display: block;
+}
+
 
 .nav-list-mobile {
   display: block;
