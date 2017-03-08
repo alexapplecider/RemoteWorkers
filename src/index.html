@@ -120,19 +120,20 @@
                   <span class="accent-color">2,400</span> Active Profiles
                 </div>
             </div>
+
             <div class="featured-profiles-table"> 
               <div class="profile-row">
                 <div class="profile-row__cell cell-name">
                   <img class="photo" src="img/profile-photos/photo1.png" alt="profile-photo">
-                <span class="name"> Moynar Bap </span> 
+                  <span class="name"> Moynar Bap </span> 
                   <span class="position"> Marketing Expert </span>
                 </div> 
-                      <div class="profile-row__cell">$45/<sup>hr</sup></div>
-                      <div class="profile-row__cell">Full Time</div>
-                      <div class="profile-row__cell">California USA</div>
-                      <div class="profile-row__cell">
-                        <a class="view-profile-link" href="#"> View Profile </a>
-                      </div>
+                <div class="profile-row__cell">$45/<sup>hr</sup></div>
+                <div class="profile-row__cell">Full Time</div>
+                <div class="profile-row__cell">California USA</div>
+                <div class="profile-row__cell cell-link">
+                  <a class="view-profile-link" href="#"> View Profile </a>
+                </div>
               </div>
               <div class="profile-row">
                 <div class="profile-row__cell cell-name">
@@ -143,7 +144,7 @@
                       <div class="profile-row__cell">$45/<sup>hr</sup></div>
                       <div class="profile-row__cell">Full Time</div>
                       <div class="profile-row__cell">California USA</div>
-                      <div class="profile-row__cell">
+                      <div class="profile-row__cell cell-link">
                         <a class="view-profile-link" href="#"> View Profile </a>
                       </div>
               </div>
@@ -156,7 +157,7 @@
                       <div class="profile-row__cell">$45/<sup>hr</sup></div>
                       <div class="profile-row__cell">Full Time</div>
                       <div class="profile-row__cell">California USA</div>
-                      <div class="profile-row__cell">
+                      <div class="profile-row__cell cell-link">
                         <a class="view-profile-link" href="#"> View Profile </a>
                       </div>
               </div>
@@ -169,7 +170,7 @@
                       <div class="profile-row__cell">$45/<sup>hr</sup></div>
                       <div class="profile-row__cell">Full Time</div>
                       <div class="profile-row__cell">California USA</div>
-                      <div class="profile-row__cell">
+                      <div class="profile-row__cell cell-link">
                         <a class="view-profile-link" href="#"> View Profile </a>
                       </div>
               </div>
@@ -182,7 +183,7 @@
                       <div class="profile-row__cell">$45/<sup>hr</sup></div>
                       <div class="profile-row__cell">Full Time</div>
                       <div class="profile-row__cell">California USA</div>
-                      <div class="profile-row__cell">
+                      <div class="profile-row__cell cell-link">
                         <a class="view-profile-link" href="#"> View Profile </a>
                       </div>
               </div>
@@ -195,7 +196,7 @@
                       <div class="profile-row__cell">$45/<sup>hr</sup></div>
                       <div class="profile-row__cell">Full Time</div>
                       <div class="profile-row__cell">California USA</div>
-                      <div class="profile-row__cell">
+                      <div class="profile-row__cell cell-link">
                         <a class="view-profile-link" href="#"> View Profile </a>
                       </div>
               </div>
@@ -357,6 +358,8 @@
   </ul>
 </div>
 
+
+
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 
@@ -376,8 +379,9 @@
 
       $('.mobile-menu-button').on( 'click', function( event ) {
         mobMenuBlock.toggleClass('mobile-menu-block--show');
-        console.log( 'clicked', $( this ).text() );
 });
+
+
 
 </script>
 

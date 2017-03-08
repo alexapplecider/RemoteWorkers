@@ -532,6 +532,13 @@
 //
 //
 
+
+@media (max-width: 1200px) {
+	.how-work__find-out-link {
+    padding-left: 17%;
+	}
+}
+
 @media (max-width: 1024px) {
 	.how-work__find-out-link {
    padding-left: 3%;
@@ -637,13 +644,24 @@
 	}
 }
 
-@media (max-width: 480px) {
+// @media (max-width: 480px) {
 	
-}
+// }
 
 @media (max-width: 400px) {
 	.about {
    margin-bottom: 30px;
+	}
+		.cell-name {
+		width: 100%;
+		text-align: center;
+	}
+	.cell-link {
+		width: 100%;
+    text-align: center;
+	}
+	.feedback__slider {
+		width: 86%;
 	}
 }
 
@@ -658,4 +676,5 @@
     padding-top: 15px;
     padding-bottom: 10px;
 	}
+
 }

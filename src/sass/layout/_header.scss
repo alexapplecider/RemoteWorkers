@@ -5,6 +5,7 @@ body {
   font-family: "MuseoSansRegular", Arial, serif;
   font-size: 10px;
   color: #000;
+  overflow: hidden;
 }
 .accent-color {
   color: $accent-color;
@@ -165,6 +166,11 @@ body {
     text-decoration: none;
     box-shadow: 0px 0px 1px 3px rgba(0,0,0,.1);
     background: linear-gradient(to top, #27bc95, #3bd3ba);
+    &:hover {
+      background: linear-gradient(to top, #1c9071, #3bd3ba);
+      padding-top: 20px;
+      padding-bottom: 14px;
+      }
   }
 }
 
@@ -211,7 +217,7 @@ body {
 
 .mobile-menu-block {
   display: none;
-  position: fixed;
+  position: fixed; 
   top: 0;
   right: 0;
   bottom: 0;
