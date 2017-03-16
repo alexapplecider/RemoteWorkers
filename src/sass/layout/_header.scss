@@ -6,6 +6,9 @@ body {
   font-size: 10px;
   color: #000;
 }
+.page-wrap {
+  overflow: hidden;
+}
 .accent-color {
   color: $accent-color;
 }
@@ -248,6 +251,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
   max-width: 1030px;
   align-self: center;
   color: $second-color;

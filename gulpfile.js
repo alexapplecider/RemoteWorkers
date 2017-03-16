@@ -1,7 +1,10 @@
 var gulp         = require("gulp"),
     sass         = require("gulp-sass"),
     livereload   = require("gulp-livereload"),
-    connect      = require("gulp-connect");
+    connect      = require("gulp-connect"),
+    autoprefixer = require('gulp-autoprefixer');
+
+
 
 gulp.task('connect', function () {
    connect.server({
@@ -26,6 +29,15 @@ gulp.task('sass', function(){
         .pipe(gulp.dest('src/css'))
 
 });
+
+gulp.task('autoprefixer', () =>
+    gulp.src('docs/css/styles.css')
+        .pipe(autoprefixer({
+            browsers: ['last 10 versions', '> 1%', 'ie 8', 'ie 7'],
+            cascade: true
+        }))
+        .pipe(gulp.dest('docs/css/'))
+);
 
 gulp.task('watch', ['connect', 'sass'], function () {
     gulp.watch('src/sass/**/*.scss', ['sass']);
