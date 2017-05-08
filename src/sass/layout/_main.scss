@@ -486,7 +486,7 @@
 	box-shadow: inset -3px -1px 8px 0 rgba(7, 7, 7, 0.2);
 
 	&::after {
-		content: "";
+	content: "";
 	position: absolute;
 	top: -9%;
 	left: -7%;
@@ -607,7 +607,6 @@
 		margin-top: 40px;
 	}
 }
-
 	.video-wrap {
    width: 100%;
    &::after {
@@ -650,7 +649,7 @@
 
 @media (max-width: 720px) {
 	.about {
-		padding-left: 40.12%;
+	padding-left: 40.12%;
 	}
 }
 
@@ -658,8 +657,8 @@
 
 @media (max-width: 600px) {
 	.about {
-		padding-left: 0;
-		background: none;
+	padding-left: 0;
+	background: none;
 	}
 	.how-work__description-title {
     margin-top: 40px;
@@ -672,15 +671,22 @@
 	}
 }
 
+@media (max-width: 480px) {
+	.top-teams {
+	flex-direction: column;
+    align-items: center;
+	}
+}
+
 
 
 @media (max-width: 400px) {
 	.about {
    margin-bottom: 30px;
 	}
-		.cell-name {
-		width: 100%;
-		text-align: center;
+	.cell-name {
+	width: 100%;
+	text-align: center;
 	}
 	.cell-link {
 		width: 100%;
@@ -695,15 +701,15 @@
 
 @media (max-width: 320px) {
 	.price-per-hour {
-		margin-bottom: 20px;
+	margin-bottom: 20px;
 	}
 	.about-switch-button {
-		margin-left: 40px;
+	margin-left: 40px;
 	}
 	
 	.profile-row__cell {
-		padding-top: 15px;
-		padding-bottom: 10px;
+	padding-top: 15px;
+	padding-bottom: 10px;
 	}
 	.flex-wrap--featured-profiles {
     margin-bottom: 0px;

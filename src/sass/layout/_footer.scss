@@ -195,7 +195,22 @@
 //
 //
 
+@media (max-width: 768px) {
+	.flex-wrap--footer {
+	justify-content: space-around;
+	}
+	.subscribe-and-social {
+	width: 100%;
+	max-width: none;
+	text-align: center;
+	}
+}
+
+
 @media (max-width: 720px) {
+	.footer {
+		padding-top: 15px;
+	}
 	.flex-wrap--footer {
 	justify-content: space-around;
 	}
@@ -216,6 +231,20 @@
 	}
 }
 
+@media (max-width: 480px) {
+	.subscribe-input-field {
+    width: 65%;
+	}
+	.social-links {
+	display: flex;
+    justify-content: space-around;
+    margin-right: 0;
+	}
+	.social-btn {
+	margin-right: 0;
+	}
+}
+
 @media (max-width: 320px) {
 	.subscribe-input-field {
 		max-width: 235px;
@@ -224,5 +253,14 @@
 	}
 	.subscribe-input-btn {
 	font: 12.67px/1.3 "MuseosansRegular";
+	}
+
+	.from-blog-title {
+    text-align: center;
+    margin-top: 11px;
+	}
+	.right-and-design {
+	font: 12.7px/1.7 "MuseoSansMedium";
+    margin-top: 40px;
 	}
 }
