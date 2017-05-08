@@ -339,6 +339,10 @@ body {
     background-color: #30c6a5;
     padding: 11px 24px;
     cursor: pointer; }
+  .quick-search__btn:hover {
+    background: linear-gradient(to top, #1c9071, #3bd3ba);
+    padding-top: 14px;
+    padding-bottom: 8px; }
 
 @media (min-width: 1400px) {
   .header {
@@ -349,6 +353,10 @@ body {
     padding: 0 1% 0 1%; }
   .inner-container {
     padding: 0 1% 0 1%; } }
+
+@media (max-width: 980px) {
+  .quick-search__btn {
+    padding: 10px 10px; } }
 
 @media (max-width: 768px) {
   .header-nav {
@@ -364,9 +372,12 @@ body {
     margin-bottom: 2%; }
   .quick-search__btn {
     align-self: center;
-    height: 90px; } }
+    height: 90px;
+    padding: 11px 24px; } }
 
 @media (max-width: 600px) {
+  .header {
+    margin-bottom: 75px; }
   .promo-block__title {
     font: 3em/1.3 "MuseoSansBlack"; } }
 
@@ -518,6 +529,7 @@ body {
 
 .video-wrap {
   width: 50%;
+  max-height: 450px;
   position: relative; }
   .video-wrap::after {
     content: "";
@@ -528,9 +540,6 @@ body {
     left: -10px;
     background-color: #30c6a5;
     transform: rotate(45deg); }
-
-.how-work-video {
-  width: 100%; }
 
 .featured-profiles {
   color: black;
@@ -815,13 +824,23 @@ body {
     color: #30c6a5;
     letter-spacing: 0.5px; }
 
+@media (min-width: 1400px) {
+  .how-work {
+    justify-content: center; }
+  .how-work-inner-wrap {
+    width: auto; }
+  .video-wrap {
+    width: auto; } }
+
 @media (max-width: 1200px) {
   .how-work__find-out-link {
     padding-left: 17%; } }
 
 @media (max-width: 1024px) {
   .how-work__find-out-link {
-    padding-left: 3%; } }
+    padding-left: 3%; }
+  .container-full--why-us {
+    background: url(../img/why-us.png) 505% 55% no-repeat; } }
 
 @media (max-width: 980px) {
   .how-work__description {
@@ -830,7 +849,7 @@ body {
   .how-work__find-out-link {
     padding-left: 5%; }
   .container-full--why-us {
-    background: url(../img/why-us.png) 1000% 55% no-repeat; } }
+    background: url(../img/why-us.png) 870% 55% no-repeat; } }
 
 @media (max-width: 768px) {
   .about {
@@ -851,11 +870,15 @@ body {
   .how-work__description {
     align-self: flex-start;
     max-width: 100%; }
+    .how-work__description-title {
+      margin-top: 40px; }
   .video-wrap {
     width: 100%; }
     .video-wrap::after {
       top: -2%;
       left: 47%; }
+  .how-work-video {
+    width: 100%; }
   .how-work__find-out-link {
     text-align: center;
     padding-left: 0;
@@ -885,6 +908,10 @@ body {
   .about {
     padding-left: 0;
     background: none; }
+  .how-work__description-title {
+    margin-top: 40px; }
+  .how-work__description-text {
+    margin-bottom: 25px; }
   .how-work__find-out-link {
     font: 1.5em/1.3 "MuseoSansRegular"; } }
 
@@ -907,7 +934,11 @@ body {
     margin-left: 40px; }
   .profile-row__cell {
     padding-top: 15px;
-    padding-bottom: 10px; } }
+    padding-bottom: 10px; }
+  .flex-wrap--featured-profiles {
+    margin-bottom: 0px; }
+  .feedback__slider {
+    min-height: 375px; } }
 
 .footer {
   font: 1.354em/1.5 "MuseoSansMedium";
@@ -918,13 +949,17 @@ body {
     font: 31.25px/1.7 "MuseoSlab_500";
     color: #546e7a; }
 
+.subscribe-and-social {
+  width: 100%;
+  max-width: 353px; }
+
 .subscribe-text {
   color: #a8b6bc;
   margin-bottom: 15px;
   letter-spacing: 1px; }
 
 .subscribe-input {
-  width: 353px;
+  width: 100%;
   margin-bottom: 28px; }
   .subscribe-input-field {
     max-width: 235px;
@@ -1048,6 +1083,21 @@ body {
   font: 13.54px/1.7 "MuseoSansMedium";
   display: block;
   color: #78909c; }
+
+@media (max-width: 720px) {
+  .flex-wrap--footer {
+    justify-content: space-around; }
+  .subscribe-and-social {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 20px; }
+  .subscribe-input-field {
+    max-width: 270px; } }
+
+@media (max-width: 600px) {
+  .footer {
+    padding-top: 0px; } }
 
 @media (max-width: 320px) {
   .subscribe-input-field {
