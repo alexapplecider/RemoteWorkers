@@ -167,7 +167,7 @@ body {
 
 .logo {
   align-content: flex-start;
-  font: 3.1em "MuseoSlab_500";
+  font: 3.1em "MuseoSansRegular";
   color: #ffffff;
   letter-spacing: 0.2px;
   text-decoration: none; }
@@ -184,7 +184,7 @@ body {
 .nav-list__item {
   list-style: none;
   display: inline-block;
-  font: 1.6em/1.5 "Museo Sans Cyrl 300";
+  font: 1.6em/1.5 "MuseoSansRegular";
   letter-spacing: 0.5px;
   margin-right: 28px; }
   .nav-list__item:last-child {
@@ -211,6 +211,7 @@ body {
   .promo-block__text {
     text-align: center;
     font: 1.67em/1.5 "MuseoSansLight";
+    font-weight: 600;
     margin-bottom: 5px;
     letter-spacing: 1px; }
   .promo-block__title {
@@ -406,6 +407,7 @@ body {
     margin-bottom: 11px; }
   .about__title--small {
     font: 1.67em/1.3 "MuseoSansBold";
+    color: #78909c;
     margin-bottom: 29px;
     letter-spacing: 0.3px; }
   .about__skills-title {
@@ -438,9 +440,9 @@ body {
   .skills-list__item::before {
     content: "";
     position: absolute;
-    width: 4px;
-    height: 4px;
-    background-color: #b7c4ca;
+    width: 5px;
+    height: 5px;
+    background-color: #79909c;
     border-radius: 50%;
     top: 8px;
     left: 0; }
@@ -484,13 +486,13 @@ body {
 
 .how-work {
   display: flex;
+  justify-content: center;
   min-height: 450px;
   margin-bottom: 92px; }
   .how-work-inner-wrap {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50%;
     background-color: #30c6a5; }
   .how-work__find-out-link {
     display: block;
@@ -514,7 +516,9 @@ body {
   align-self: flex-end;
   height: auto;
   max-width: 500px;
-  padding-right: 10%; }
+  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%; }
   .how-work__description-title {
     font: 2.5em/1.3 "MuseoSansBold";
     color: #fff;
@@ -722,15 +726,26 @@ body {
 .part-time {
   margin-right: 10px; }
 
-.container-full--why-us {
-  background: url(../img/why-us.png) 210% 55% no-repeat; }
+.flex-wrap--why-us {
+  position: relative; }
+
+.back-block {
+  position: absolute;
+  top: 18%;
+  right: -55%;
+  width: 100%;
+  height: 535px;
+  background: url(../img/why-us.png) no-repeat;
+  z-index: 1; }
 
 .why-us {
+  position: relative;
   width: 515px;
   padding-top: 100px;
   padding-bottom: 55px;
   color: #78909c;
-  letter-spacing: 0.5px; }
+  letter-spacing: 0.5px;
+  z-index: 2; }
   .why-us-small-title {
     font: 1.458em/1.7 "MuseoSansRegular"; }
   .why-us-title {
@@ -827,8 +842,6 @@ body {
 @media (min-width: 1400px) {
   .how-work {
     justify-content: center; }
-  .how-work-inner-wrap {
-    width: auto; }
   .video-wrap {
     width: auto; } }
 
@@ -838,18 +851,14 @@ body {
 
 @media (max-width: 1024px) {
   .how-work__find-out-link {
-    padding-left: 3%; }
-  .container-full--why-us {
-    background: url(../img/why-us.png) 505% 55% no-repeat; } }
+    padding-left: 3%; } }
 
 @media (max-width: 980px) {
   .how-work__description {
     padding-right: 5%;
     padding-left: 5%; }
   .how-work__find-out-link {
-    padding-left: 5%; }
-  .container-full--why-us {
-    background: url(../img/why-us.png) 870% 55% no-repeat; } }
+    padding-left: 5%; } }
 
 @media (max-width: 768px) {
   .about {
@@ -898,7 +907,9 @@ body {
       flex-basis: 100%; }
   .why-us {
     width: 100%;
-    padding-top: 50px; } }
+    padding-top: 50px; }
+  .back-block {
+    display: none; } }
 
 @media (max-width: 720px) {
   .about {

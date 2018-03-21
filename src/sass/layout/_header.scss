@@ -93,7 +93,7 @@ body {
 
 .logo { 
   align-content: flex-start;
-  font: 3.1em "MuseoSlab_500";
+  font: 3.1em "MuseoSansRegular";
   color: #ffffff;
   letter-spacing: 0.2px;
   text-decoration: none;
@@ -113,7 +113,7 @@ body {
 .nav-list__item {
   list-style: none;
   display: inline-block;
-  font: 1.6em/1.5 "Museo Sans Cyrl 300";
+  font: 1.6em/1.5 "MuseoSansRegular";
   letter-spacing: 0.5px;
   margin-right: 28px;
 
@@ -149,6 +149,7 @@ body {
   &__text {
     text-align: center;
     font: 1.67em/1.5 "MuseoSansLight";
+    font-weight: 600;
     margin-bottom: 5px;
     letter-spacing: 1px;
   }
