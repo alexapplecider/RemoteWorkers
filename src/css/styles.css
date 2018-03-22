@@ -111,6 +111,16 @@ body {
   border-radius: 3px;
   letter-spacing: 1px; }
 
+#nav-and-logo.default {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  background-color: #262520;
+  padding: 20px 20%;
+  z-index: 999;
+  transition: 1s all ease-in-out; }
+
 .bottom-line {
   border-bottom: 1px solid #e1e3e4; }
 
@@ -175,7 +185,9 @@ body {
 .nav-and-logo {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 59px; }
+  margin-bottom: 59px;
+  position: initial;
+  transition: 1s position ease; }
 
 .header-nav {
   display: flex;
@@ -239,7 +251,7 @@ body {
   position: fixed;
   top: 58px;
   right: 20px;
-  padding: 10px 10px;
+  padding: 15px 5px;
   cursor: pointer;
   z-index: 10; }
 
@@ -280,7 +292,7 @@ body {
   background-color: rgba(0, 0, 0, 0.9);
   text-align: center;
   padding-top: 20vh;
-  z-index: 1; }
+  z-index: 995; }
 
 .mobile-menu-block--show {
   display: block; }
@@ -360,6 +372,8 @@ body {
     padding: 10px 10px; } }
 
 @media (max-width: 768px) {
+  #nav-and-logo.default {
+    position: inherit; }
   .header-nav {
     display: none; }
   .mobile-menu {
